@@ -21,7 +21,7 @@
     "PATH": "/home/gitpod/.cargo/bin:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:${env:PATH}"
   },
   "postCreateCommand": "cargo install just",
-  "postStartCommand": "bash -c 'export PATH=/home/gitpod/.cargo/bin:$PATH && sudo /entrypoint.sh couchbase-server & sleep 30 && cbsh -c \"source bucketSetup.nu; dbSetup $COUCHBASE_DEFAULT_BUCKET $COUCHBASE_DEFAULT_SCOPE $COUCHBASE_DEFAULT_COLLECTION\" && just dev'",
+  "postStartCommand": "bash -c 'postStart.sh'",
   "customizations": {
     "vscode": {
       "extensions": [
