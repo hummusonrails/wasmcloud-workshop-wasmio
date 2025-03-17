@@ -8,7 +8,7 @@
   "containerEnv": {
     "COUCHBASE_USERNAME": "Administrator",
     "COUCHBASE_PASSWORD": "password",
-    "COUCHBASE_DEFAULT_BUCKET": "wasmio2025",
+    "COUCHBASE_DEFAULT_BUCKET": "nubase",
     "COUCHBASE_DEFAULT_SCOPE": "_default",
     "COUCHBASE_DEFAULT_COLLECTION": "_default",
     "COUCHBASE_CONNECTION_STRING": "localhost",
