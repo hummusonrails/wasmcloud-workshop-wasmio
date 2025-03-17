@@ -3,7 +3,7 @@
   "image": "laurentdoguin/workspace-couchbase-wash",
   "runArgs": [
     "--name",
-    "kcon2024-workshop"
+    "wasmio2025-workshop"
   ],
   "containerEnv": {
     "COUCHBASE_USERNAME": "Administrator",
@@ -18,10 +18,10 @@
   },
   "remoteUser": "gitpod",
   "remoteEnv": {
-    "PATH": "${containerEnv:PATH}:/home/gitpod/.cargo/bin:/home/gitpod/go/bin:/home/gitpod/go-packages/bin"
+    "PATH": "/home/gitpod/.cargo/bin:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:${env:PATH}"
   },
   "postCreateCommand": "cargo install just",
-  "postStartCommand": "sudo /entrypoint.sh couchbase-server & sleep 30 && cbsh -c \"source bucketSetup.nu; dbSetup $COUCHBASE_DEFAULT_BUCKET $COUCHBASE_DEFAULT_SCOPE $COUCHBASE_DEFAULT_COLLECTION\" && just dev",
+  "postStartCommand": "sudo /entrypoint.sh couchbase-server & sleep 30 && cbsh -c \"source bucketSetup.nu; dbSetup $COUCHBASE_DEFAULT_BUCKET $COUCHBASE_DEFAULT_SCOPE $COUCHBASE_DEFAULT_COLLECTION\" && export PATH=$HOME/.cargo/bin:$PATH && just dev",
   "customizations": {
     "vscode": {
       "extensions": [
