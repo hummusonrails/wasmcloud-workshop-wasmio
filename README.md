@@ -1,17 +1,7 @@
-# 🛋 WASMCON 2024: Implementing a Wasm Native Database API with Couchbase
+# Wasm I/O 2025: Getting Started with Wasmcloud
 
-Presented by [Couchbase][couchbase] and [Cosmonic][cosmonic] maintainers.
-
-[<img src="docs/images/workshop-yt-screenshot.png">](https://www.youtube.com/watch?v=Cc5FcP8rMQ0&list=PLbzoR-pLrL6o0UD4PoO0H_RnoToEiWBIS&index=37&ab_channel=TheLinuxFoundation)
-
-### [📽️ Get the slides](https://docs.google.com/presentation/d/1KOmK13DK9rA7rHA37pbFNxVi2jCkNIhrJkUmK5evW84)
-
-### [🗓️ View Sched.com Event](https://wasmcon24.sched.com/event/ceac3a35d773d3c7498156218db7e22e)
 
 This repository contains everything you need to get started with the workshop:
-
-[cosmonic]: https://cosmonic.com/
-[couchbase]: https://couchbase.com/
 
 ## 👷 Workshop
 
