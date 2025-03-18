@@ -1,0 +1,17 @@
+package wasmcloud:hello;
+
+interface actor {
+  record call-actor-request {
+    target: string,
+    operation: string,
+    payload: list<u8>,
+  }
+
+  call-actor: func(req: call-actor-request) -> result<list<u8>, string>;
+}
+
+world hello {
+  import actor;
+
+  export wasi:http/incoming-handler@0.2.0;
+}

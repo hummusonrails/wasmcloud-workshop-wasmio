@@ -1,0 +1,2 @@
+cargo:rerun-if-changed=build.rs
+cargo:rustc-env=DEBUG_OUTPUT_DIR=/Users/ben.greenberg/Dev/wasmcloud-workshop-wasmio/hello/target/debug/build/wit-bindgen-rust-macro-452a7e0775d9dba7/out

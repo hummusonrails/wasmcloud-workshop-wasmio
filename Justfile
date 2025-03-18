@@ -92,3 +92,6 @@ build: _ensure-tool-wash fetch-wit
 # Start `wash dev` to dynamically develop the `nubase` WebAssembly component
 dev: _ensure-tool-wash fetch-wit
     cd nubase && {{wash}} dev
+
+hello-build:
+    cd hello && cargo build --release --target wasm32-wasi
