@@ -21,7 +21,7 @@
     "PATH": "/home/gitpod/.cargo/bin:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:${env:PATH}"
   },
   "postCreateCommand": "cargo install just",
-  "postStartCommand": "bash -c 'postStart.sh'",
+  "postStartCommand": "./.devcontainer/postStart.sh",
   "customizations": {
     "vscode": {
       "extensions": [
