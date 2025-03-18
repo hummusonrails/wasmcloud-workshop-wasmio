@@ -1,17 +1,27 @@
+// Define the package name
 package wasmcloud:hello;
 
+// Define an interface named 'actor'
 interface actor {
+  // Define a record type named 'call-actor-request'
+  // This record contains three fields: target, operation, and payload
   record call-actor-request {
-    target: string,
-    operation: string,
-    payload: list<u8>,
+    target: string,       // The target actor to call
+    operation: string,    // The operation to perform
+    payload: list<u8>,    // The payload to send, as a list of unsigned 8-bit integers
   }
 
+  // Define a function named 'call-actor'
+  // This function takes a 'call-actor-request' as input and returns a result
+  // The result is either a list of unsigned 8-bit integers (success) or a string (error)
   call-actor: func(req: call-actor-request) -> result<list<u8>, string>;
 }
 
+// Define a world named 'hello'
 world hello {
+  // Import the 'actor' interface
   import actor;
 
+  // Export the 'wasi:http/incoming-handler' interface version 0.2.0
   export wasi:http/incoming-handler@0.2.0;
 }

@@ -1,8 +1,26 @@
-name = "hello"
+# Exercise: Creating a wasmCloud Actor Configuration File
+
+## Objective
+In this exercise, you will create a configuration file for a new wasmCloud actor. This file is essential for defining the properties and metadata of your actor, which will be used during the build and deployment process.
+
+## Instructions
+1. Delete the contents of this file.
+2. Create your own configuration based on the instructions and the example template provided below.
+
+## Template Explanation
+- `name`: The name of your actor. This should be a unique identifier for your actor.
+- `version`: The version of your actor. Follow semantic versioning (e.g., "0.1.0").
+- `language`: The programming language used to write your actor. For this exercise, we are using Rust.
+- `type`: The type of the project. For actors, this should be "component".
+
+### Component Section
+- `wit_world`: The WebAssembly Interface Types (WIT) world that your actor will interact with. This defines the interface your actor will use.
+- `wasm_target`: The target architecture for your WebAssembly module. For wasmCloud, this is typically "wasm32-wasi".
+
+## Example Configuration
+name = ""
 version = "0.1.0"
-language = "rust"
+language = "what language is this component written in?"
 type = "component"
 
 [component]
-wit_world = "hello"
-wasm_target = "wasm32-wasip2"

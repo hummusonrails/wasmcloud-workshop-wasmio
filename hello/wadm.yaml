@@ -1,33 +1,33 @@
-apiVersion: core.oam.dev/v1beta1
-kind: Application
+apiVersion: core.oam.dev/v1beta1  # Specifies the API version of the OAM (Open Application Model) being used
+kind: Application  # Defines the kind of resource, which is an Application in this case
 metadata:
-  name: hello
+  name: hello  # The name of the application
   annotations:
-    description: 'Simple HTTP hello world server'
+    description: 'Simple HTTP hello world server'  # A brief description of the application
 spec:
   components:
-    - name: http-component
-      type: component
+    - name: http-component  # The name of the first component
+      type: component  # The type of the component
       properties:
-        image: file://./build/hello_s.wasm
+        image: file://./build/hello_s.wasm  # The location of the WebAssembly module for this component
       traits:
-        - type: spreadscaler
+        - type: spreadscaler  # A trait that defines scaling properties
           properties:
-            instances: 1
-    - name: httpserver
-      type: capability
+            instances: 1  # Specifies the number of instances to run
+    - name: httpserver  # The name of the second component
+      type: capability  # The type of the component, indicating it provides a capability
       properties:
-        image: ghcr.io/wasmcloud/http-server:0.26.0
+        image: ghcr.io/wasmcloud/http-server:0.26.0  # The image for the HTTP server capability
       traits:
-        - type: link
+        - type: link  # A trait that defines a link between components
           properties:
             target:
-              name: http-component
-            namespace: wasi
-            package: http
-            interfaces: [incoming-handler]
+              name: http-component  # The target component to link to
+            namespace: wasi  # The namespace for the link
+            package: http  # The package for the link
+            interfaces: [incoming-handler]  # The interfaces provided by the link
             source:
               config:
-                - name: default-http
+                - name: default-http  # The name of the configuration
                   properties:
-                    address: 0.0.0.0:8000
+                    address: 0.0.0.0:8000  # The address and port on which the HTTP server will listen
