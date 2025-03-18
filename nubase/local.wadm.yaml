@@ -5,8 +5,7 @@ metadata:
   name: nubase
   annotations:
     description: |
-      NuBase - A Couchbase powered Developer-friendly database, built for WASMCON 2024
-spec:
+      NuBase - A Couchbase powered Developer-friendly database
   components:
     - name: nubase
       type: component
@@ -34,8 +33,7 @@ spec:
                     # NOTE: Do not put passwords in your link config in production!
                     # wasmCloud has secrets support (https://wasmcloud.com/docs/concepts/secrets).
                     #
-                    # We do this here only to make demoing simpler, and this only works on a
-                    # limited build (-wasmcon2024) of the provider
+                    # We do this here only to make demoing simpler.
                     allow_unsafe_password: 'enabled'
                     password: 'password'
 

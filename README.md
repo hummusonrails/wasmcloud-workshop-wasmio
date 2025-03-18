@@ -34,7 +34,7 @@ Here's a run-down of the files in this repository:
 
 ### GitPod
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/vados-cosmonic/wasmcon2024-couchbase-workshop)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/hummusonrails/wasmcloud-workshop-wasmio)
 
 If using [GitPod][gitpod], you can launch `.gitpod.yml` file in this repository, and make an account at GitPod.io if necessary to get into an environment that "just works"!
 
@@ -42,9 +42,12 @@ If using [GitPod][gitpod], you can launch `.gitpod.yml` file in this repository,
 
 ### GitHub Codespaces
 
-[![Open in Codespaces](https://img.shields.io/badge/Open%20in-GitHub%20Codespaces-blue?logo=github&logoColor=white&style=for-the-badge)](https://github.com/hummusonrails/wasmcloud-workshop-wasmio)
+[![Open in Codespaces](https://img.shields.io/badge/Open%20in-GitHub%20Codespaces-blue?logo=github&logoColor=white&style=for-the-badge)](https://codespaces.new/hummusonrails/wasmcloud-workshop-wasmio/tree/workshop)
 
 If using GitHub Codespaces, just click on the button above, and if you already have a GitHub account, you can get into an environment that "just works"!
+
+> [!NOTE]  
+> This link will open a Codespace in the `workshop` branch, which is the branch that contains incomplete code that we'll be building during the workshop. 
 
 ### Devcontainers
 
