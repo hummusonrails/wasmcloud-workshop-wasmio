@@ -12,13 +12,13 @@
     "COUCHBASE_DEFAULT_SCOPE": "_default",
     "COUCHBASE_DEFAULT_COLLECTION": "_default",
     "COUCHBASE_CONNECTION_STRING": "localhost",
-    "CARGO_HOME": "/home/gitpod/.cargo",
-    "GOPATH": "/home/gitpod/go-packages",
-    "GOROOT": "/home/gitpod/go"
+    "CARGO_HOME": "/home/attendee/.cargo",
+    "GOPATH": "/home/attendee/go-packages",
+    "GOROOT": "/home/attendee/go"
   },
-  "remoteUser": "gitpod",
+  "remoteUser": "attendee",
   "remoteEnv": {
-    "PATH": "/home/gitpod/.cargo/bin:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:${env:PATH}"
+    "PATH": "/home/attendee/.cargo/bin:/home/attendee/go/bin:/home/attendee/go-packages/bin:${env:PATH}"
   },
   "postCreateCommand": "cargo install just",
   "postStartCommand": "./.devcontainer/postStart.sh",
