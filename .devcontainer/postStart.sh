@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Export the PATH
-export PATH=/home/attendee/.cargo/bin:$PATH
+export PATH=/home/gitpod/.cargo/bin:$PATH
 
 # Start Couchbase server
 sudo /entrypoint.sh couchbase-server &
