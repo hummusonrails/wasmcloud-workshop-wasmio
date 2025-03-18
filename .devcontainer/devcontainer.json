@@ -53,12 +53,15 @@
   ],
   "portsAttributes": {
     "4222": {
+      "visbility": "public",
       "onAutoForward": "ignore"
     },
     "4223": {
+      "visbility": "public",
       "onAutoForward": "ignore"
     },
     "8080": {
+      "visbility": "public",
       "onAutoForward": "openBrowser"
     },
     "8091": {
@@ -66,45 +69,59 @@
       "visibility": "public"
     },
     "8092": {
+      "visbility": "public",
       "onAutoForward": "ignore"
     },
     "8093": {
+      "visbility": "public",
       "onAutoForward": "ignore"
     },
     "8094": {
+      "visbility": "public",
       "onAutoForward": "ignore"
     },
     "8095": {
+      "visbility": "public",
       "onAutoForward": "ignore"
     },
     "8096": {
+      "visbility": "public",
       "onAutoForward": "ignore"
     },
     "11207": {
+      "visbility": "public",
       "onAutoForward": "ignore"
     },
     "11210": {
+      "visbility": "public",
       "onAutoForward": "ignore"
     },
     "11211": {
+      "visbility": "public",
       "onAutoForward": "ignore"
     },
     "18091": {
+      "visbility": "public",
       "onAutoForward": "ignore"
     },
     "18092": {
+      "visbility": "public",
       "onAutoForward": "ignore"
     },
     "18093": {
+      "visbility": "public",
       "onAutoForward": "ignore"
     },
     "18094": {
+      "visbility": "public",
       "onAutoForward": "ignore"
     },
     "18095": {
+      "visbility": "public",
       "onAutoForward": "ignore"
     },
     "18096": {
+      "visbility": "public",
       "onAutoForward": "ignore"
     }
   }
