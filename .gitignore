@@ -1,1 +1,5 @@
 /TODO.org
+hello/target/debug
+hello/target/
+hello/Cargo.lock
+hello/*.rs.bk
