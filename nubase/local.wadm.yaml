@@ -6,6 +6,7 @@ metadata:
   annotations:
     description: |
       NuBase - A Couchbase powered Developer-friendly database
+spec:
   components:
     - name: nubase
       type: component
